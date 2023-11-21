@@ -124,3 +124,14 @@ input:-webkit-autofill:active{
     display: flex;
     flex-direction: column;
 }
+
+.submit-button {
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    background: linear-gradient(to right, #4d2ea2, #673cba);
+    color: white;
+    border-radius: 0.5rem;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+}
