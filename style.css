@@ -142,6 +142,10 @@ display: table-cell;
     border: 1px solid red
 }
 
+.form-item--success input {
+    border: 1px solid green
+}
+
 .error-message {
     height: 1rem;
     padding-top: 0.2rem;
