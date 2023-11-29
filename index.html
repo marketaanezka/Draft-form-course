@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <img
         class="logo"
         src="./images/logo.jpg"
@@ -28,25 +28,26 @@
         <a class="navlink" href="">link 3</a>
         <a class="navlink" href="">link 4</a>
       </nav>
-    </header>
+    </header> -->
     <main class="main">
-      <div class="intro">
-        <h1 class="main-title">Web designéři & vývojáři</h1>
-        <p class="subtitle">
+      <section class="intro">
+        <h1 class="intro__title">Web designéři & vývojáři</h1>
+        <p class="intro__subtitle">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
           autem necessitatibus, laudantium ad eaque accusantium molestiae,
           deserunt hic ex illum possimus doloremque praesentium nesciunt
         </p>
-        <div class="hero-wrapper">
-          <img src="./images/hero.webp" alt="heroimg" class="hero-image" />
+        <div class="intro__image-wrapper">
+          <img src="./images/hero.webp" alt="heroimg" class="intro__image" />
         </div>
-        <div class="intro-buttons">
+        <div class="intro__buttons">
           <button class="button button--blue">Co děláme</button>
           <button class="button button--purple">Přidej se</button>
         </div>
-      </div>
-      <div class="features">
-        <p class="features-description">
+      </section>
+      <section class="offer">
+        <h2 class="offer__title">Komunita s energií a drivem!</h2>
+        <p class="offer__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos,
           debitis nam fuga architecto cupiditate amet deleniti similique
           incidunt molestias vel, nesciunt deserunt animi, quidem minus suscipit
@@ -60,154 +61,158 @@
           adipisci eaque reprehenderit ipsum cum nobis accusamus? Obcaecati rem
           qui corporis deleniti!
         </p>
-        <div class="features-grid">
-          <div class="feature-item">
+        <div class="offer__grid">
+          <div class="feature">
             <img
-              class="logo"
+              class="feature__icon"
               src="./images/handshake.png"
               alt="logo"
               width="50"
               height="50"
             />
-            <p class="feature-description">Lorem ipsum dolor sit amet.</p>
+            <p class="feature__description">Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="feature-item">
+          <div class="feature">
             <img
-              class="logo"
+              class="feature__icon"
               src="./images/handshake.png"
               alt="logo"
               width="50"
               height="50"
             />
-            <p class="feature-description">Lorem ipsum dolor sit amet.</p>
+            <p class="feature__description">Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="feature-item">
+          <div class="feature">
             <img
-              class="logo"
+              class="feature__icon"
               src="./images/handshake.png"
               alt="logo"
               width="50"
               height="50"
             />
-            <p class="feature-description">Lorem ipsum dolor sit amet.</p>
+            <p class="feature__description">Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="feature-item">
+          <div class="feature">
             <img
-              class="logo"
+              class="feature__icon"
               src="./images/handshake.png"
               alt="logo"
               width="50"
               height="50"
             />
-            <p class="feature-description">Lorem ipsum dolor sit amet.</p>
+            <p class="feature__description">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-      </div>
-      <div class="form-container">
-        <h2 class="form-title">Přidejte se k nám!</h2>
-        <p class="form-subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          ratione laudantium fugit nisi a cumque culpa veritatis id. Itaque,
-          aut.
-        </p>
-        <form action="#" method="post">
-          <div class="form-item">
-            <label for="firstName">Jméno:</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              required
-              aria-labelledby="firstNameLabel"
-            />
-          </div>
+      </section>
+      <section class="join">
+        <div class="join__container">
+          <h2 class="join__title">Přidejte se k nám!</h2>
+          <p class="join__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            ratione laudantium fugit nisi a cumque culpa veritatis id. Itaque,
+            aut.
+          </p>
+          <form action="#" method="post">
+            <div class="form-item">
+              <label for="firstName">Jméno:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                aria-labelledby="firstNameLabel"
+              />
+            </div>
 
-          <div class="form-item">
-            <label for="lastName">Příjmení:</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              required
-              aria-labelledby="lastNameLabel"
-            />
-          </div>
+            <div class="form-item">
+              <label for="lastName">Příjmení:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                aria-labelledby="lastNameLabel"
+              />
+            </div>
 
-          <div class="form-item">
-            <label for="country">Country:</label>
-            <select
-              id="country"
-              name="country"
-              required
-              aria-labelledby="countryLabel"
-            >
-              <option value="" disabled selected>Select a country</option>
-              <option value="czech">Czech Republic</option>
-              <!-- Add more options as needed -->
-            </select>
-          </div>
-
-          <div class="form-item form-item--success">
-            <label for="phoneNumber"
-              >Phone Number (Czech format):
-              <span class="success-icon">✅</span>
-            </label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              pattern="[0-9]{9}"
-              placeholder="123456789"
-              required
-              aria-labelledby="phoneNumberLabel"
-            />
-          </div>
-
-          <div class="form-item form-item--error">
-            <label for="email">Email: </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              aria-labelledby="emailLabel"
-            />
-            <span class="error-message" id="email-error">Error message</span>
-          </div>
-
-          <div class="form-item">
-            <fieldset class="group-item">
-              <legend id="technologiesLabel">Frontend Technologies:</legend>
-              <label><input type="checkbox" name="html" /> HTML</label>
-              <label><input type="checkbox" name="css" /> CSS</label>
-              <label
-                ><input type="checkbox" name="javascript" /> JavaScript</label
+            <div class="form-item">
+              <label for="country">Country:</label>
+              <select
+                id="country"
+                name="country"
+                required
+                aria-labelledby="countryLabel"
               >
-              <!-- Add more checkboxes as needed -->
-            </fieldset>
-          </div>
+                <option value="" disabled selected>Select a country</option>
+                <option value="czech">Czech Republic</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
 
-          <div class="form-item">
-            <fieldset class="fieldset">
-              <legend id="newsletterConsentLabel">
-                Consent for Newsletter:
-              </legend>
-              <label
-                ><input type="radio" name="newsletterConsent" value="yes" />
-                Yes</label
-              >
-              <label
-                ><input type="radio" name="newsletterConsent" value="no" />
-                No</label
-              >
-            </fieldset>
-          </div>
+            <div class="form-item form-item--success">
+              <label for="phoneNumber"
+                >Phone Number (Czech format):
+                <span class="success-icon">✅</span>
+              </label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                pattern="[0-9]{9}"
+                placeholder="123456789"
+                required
+                aria-labelledby="phoneNumberLabel"
+              />
+            </div>
 
-          <div>
-            <button type="submit" class="button button--purple">Submit</button>
-          </div>
-        </form>
-      </div>
+            <div class="form-item form-item--error">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-labelledby="emailLabel"
+              />
+              <span class="error-message" id="email-error">Error message</span>
+            </div>
+
+            <div class="form-item">
+              <fieldset class="group-item">
+                <legend id="technologiesLabel">Frontend Technologies:</legend>
+                <label><input type="checkbox" name="html" /> HTML</label>
+                <label><input type="checkbox" name="css" /> CSS</label>
+                <label
+                  ><input type="checkbox" name="javascript" /> JavaScript</label
+                >
+                <!-- Add more checkboxes as needed -->
+              </fieldset>
+            </div>
+
+            <div class="form-item">
+              <fieldset class="fieldset">
+                <legend id="newsletterConsentLabel">
+                  Consent for Newsletter:
+                </legend>
+                <label
+                  ><input type="radio" name="newsletterConsent" value="yes" />
+                  Yes</label
+                >
+                <label
+                  ><input type="radio" name="newsletterConsent" value="no" />
+                  No</label
+                >
+              </fieldset>
+            </div>
+
+            <div>
+              <button type="submit" class="button button--purple">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
